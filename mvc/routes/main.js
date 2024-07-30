@@ -1,14 +1,8 @@
 const { Router } = require('express')
 const router = Router()
-const path = require('path')
+const { getMainPage, getUserPageByUid } = require('../controllers/main')
 
-const { users } = require('./users')
-
-router.get('/', (req, res) => {
-  res.render('main', {
-    title: 'User list',
-    users
-  })
-})
+router.get('/', getMainPage)
+router.get('/:uid', getUserPageByUid)
 
 module.exports = router

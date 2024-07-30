@@ -4,10 +4,8 @@ const { engine } = require('express-handlebars')
 
 const app = express()
 
-//app.set('view engine', 'pug')
-app.engine('.hbs', engine({ extname: '.hbs' }))
-app.set('view engine', '.hbs')
-// app.set('view engine', 'ejs')
+app.engine('.hbs', engine({extname: '.hbs'}));
+app.set('view engine', '.hbs');
 app.set('views', 'views')
 
 app.use(express.json())
@@ -21,11 +19,11 @@ app.use('/users', userRoutes.router)
 app.use(mainRoutes)
 
 app.use((req, res, next) => {
-	res.status(404).render('404', { title: 'Page not found' })
+  res.status(404).render('404', {title: 'Page not found'})
 })
 
 const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => {
-	console.log('Server running on PORT: 3000')
+  console.log('Server running on PORT: 3000')
 })
