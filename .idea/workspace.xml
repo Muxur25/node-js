@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8b969fc6-4eae-4fe5-a165-573886d76ad0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/node.js.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node js asoslari/Event emitter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node js asoslari/Node life tsikli va event loop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node js asoslari/PATH moduli.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node js asoslari/Request bodyni parse qilish.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node js asoslari/fs moduli.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node js asoslari/os moduli.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node js asoslari/papka/qali.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node js asoslari/request.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node js asoslari/response.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2hzlfOFPnAf2nrWEh2ITjumkzpu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/node.js/express js",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b969fc6-4eae-4fe5-a165-573886d76ad0" name="Changes" comment="" />
+      <created>1718604888600</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718604888600</updated>
+      <workItem from="1718604889801" duration="91000" />
+      <workItem from="1718784982499" duration="200000" />
+      <workItem from="1719739008162" duration="28000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
