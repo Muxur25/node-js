@@ -1,0 +1,4 @@
+npm i morgan  --- bu qaysi api qancha sorov yubordik sorov qancha davom etdi osha xaqida
+npm i colors -- sever runing on port degan yozuvlarni rangini o'zgartirish uchun
+
+npm i multer -- file upload uchun pacet

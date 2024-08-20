@@ -1,0 +1,85 @@
+<div class='container'>
+	<div class='row'>
+		<div class='col-md-6 offset-3'>
+			<div class='card mt-3'>
+				<div class='card-body'>
+					<form
+						action='/diery/add'
+						method='post'
+						enctype='multipart/form-data'
+					>
+						{{#if error}}
+							<div class="alert alert-warning" role="alert">
+								{{error}}
+							</div>
+						{{/if}}
+						<div class='mb-3'>
+							<label for='image' class='form-label'>Image for link</label>
+							<input
+								class='form-control'
+								type='file'
+								id='image'
+								name='imageUrl'
+							/>
+						</div>
+						<div class='mb-3'>
+							<label for='text' class='form-label'>Example textarea</label>
+							<textarea
+								class='form-control'
+								id='exampleFormControlTextarea1'
+								name='text'
+								rows='4'
+							></textarea>
+						</div>
+
+						<button type='submit' class='btn btn-primary'>Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-md-6 offset-3'>
+			{{#if diery }}
+				{{#each diery}}
+					<div class='card mb-5 mt-5'>
+						<div class='card-body'>
+							<div class='list-group mb-1'>
+								<a href='/profile/user/{{user.id}}' class='list-group-item list-group-item-action'>
+									<img
+										src='https://img.freepik.com/premium-vector/bearded-man-avatar-man-vector-portrait_9385-36.jpg'
+										class='rounded-circle float-start'
+										style='height: 30px;'
+										alt='...'
+									/>
+									<h5 class='card-title'>{{user.username}}</h5>
+								</a>
+							</div>
+							<p class='card-text'>{{text}}</p>
+							<p class='card-text'><small class='text-muted'>{{createdAt}}</small></p>
+						</div>
+						{{#if imageUrl }}
+							<img
+								src='{{imageUrl}}'
+								class='card-img-bottom'
+								alt='...'
+							/>
+						{{/if}}
+						 
+						<div class='card-footer d-flex'>
+							<a href='/diery/{{id}}' type='button' class='btn btn-success mx-1'>Open</a>
+							<a href='/diery/update/{{id}}' type='button' class='btn btn-primary mx-1'>Update</a>
+							<form action="/diery/delete/one/{{id}}" method="post">
+
+								<button type="submit" class="btn btn-danger mx-1">Delete</button>
+							</form>
+						</div>
+					</div>
+				{{/each}}
+			{{else}}
+				<h1>No diery add ed</h1>
+			{{/if }}
+
+		</div>
+	</div>
+</div>

@@ -1,0 +1,22 @@
+csrf ataka bu qaysidur sayt feyk sayt yaratib ortada turib olishi
+misol ucn saytimizni 100 ga 100 login qismini kopiya qilib yuborilgan
+sorovlarni tutib oladi va oziga saqlab qayta bizni serverimizga yuborishi ham mumkin
+
+uni oldini olish uchun csurf tokenlari bilan ishlashimiz kerak
+npm i csurf
+
+const csrf qilib yuklab olamiz markaziy faylga
+
+app.use((req, res, next) => {
+	res.locals.csrfToken = req.csrfToken() // endi hammasida csrfToken bor
+	next()
+})
+
+middleware royxatdan otkazamiz
+
+va form tag ichida yangi input yaratamiz
+
+<input type='hidden' name='_csrf' value='{{csrfToken}}'>
+
+
+

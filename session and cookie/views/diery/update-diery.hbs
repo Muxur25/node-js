@@ -1,0 +1,29 @@
+<div class='container'>
+	<div class='row'>
+		<div class='col-md-6 offset-3'>
+			<div class='card mt-3'>
+				<div class='card-body'>
+					<form
+						action='/diery/update/one/{{diery.id}}'
+						method='post'
+						enctype='application/x-www-form-urlencoded'
+					>
+						<div class='mb-3'>
+							<label for='text' class='form-label'>Example textarea</label>
+							<textarea
+								class='form-control'
+								id='exampleFormControlTextarea1'
+								rows='4'
+								name='text'
+							>{{diery.text}}</textarea>
+						</div>
+						{{#if diery.imageUrl}}
+							<img src='{{diery.imageUrl}}' class='card-img-bottom' alt='...' />
+						{{/if}}
+						<button type='submit' class='btn btn-primary mt-3'>Update</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

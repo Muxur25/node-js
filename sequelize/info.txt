@@ -1,0 +1,1 @@
+npm i sequelize pg  --- js da sql kodlarini yozmasdan ishlatishga yordam beraadigan paket

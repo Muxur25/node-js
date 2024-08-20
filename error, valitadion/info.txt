@@ -1,0 +1,22 @@
+
+npm i connect-flash --errorlar bn ishlashga yoordam beradigan paket
+va uni loyihamizda royxatdan otkazamiz
+app.use(flash())
+
+yangi flash massage royxatdan otkazish:
+post sorovlar payti qayerida kandeyshin ishlatvotgan bosak eshatga misol ucn
+parol mos bolmasa else tagini ichiiga req.flash('nom', 'massage')
+
+va shundan song sahifani render qilayotgan funkciyamiz ichiga yangi option
+berib yuboramiz misol ucn
+errorMassage: req.flash('nom')
+
+
+npm i express-validator  --- validatsiyalar bn ishlashda juda qol keladi
+buni ozini ikta metodi bor caqirib olamiz shularni birinchisini routerga bodyni
+ikkinchisi validatorResult digani bor oshani controllerga va req ni berib yuboramiz
+
+
+multer -- file upload uchun eng zo'r paket
+npm i multer
+file yuklash uchun formni enctype='multipart/form-data'

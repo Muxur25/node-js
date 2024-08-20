@@ -1,0 +1,6 @@
+websocet  -- bu real timeda ishlaydigan ilovalar uchun ishlAydi
+oddiy sorovda saxifa yangilanmaguncha bilib bolmaydi nima boganini
+
+npm i socket.io  -- websocet lar bilan ishlashi ychun kere
+
+npm i moment --- datelar bilan ishlash uchun

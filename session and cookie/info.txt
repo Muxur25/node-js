@@ -1,0 +1,30 @@
+npm i express-session -- sessiyalarni o'rnatishga yordam beradi
+
+index.js ga kirib session ozgaruchiga sessiya kutubxonamizni yuklaymiz
+va app.use({
+secret: 'hohlagan',
+resave: false // har yanilaganimizda sahifani sessiyani qayta saqlash shart emas
+saveUninitialized: false
+})
+
+sessiya yaratish ucn req.session.hohlaganNom = true || false
+
+npm i connect-pg-simple  -- bu sessiyalarimizni database da saqlashga yordam beradigan kutubxona
+
+
+databasega sessiyani saqlash uchun index js faylimizga
+
+const pgStore = require('connect-pg-simple')(session) // sessiyamizni berib yubordik
+va sessiyaga option berayotganda yana bitta option qoshamiz
+store: new pgStore({
+		pool: require('./config/db'),
+		tableName: "user_session"
+	})
+shuni va boldi endi bemalol sessiya yaratishimiz mumkin va malumotar
+bazasida saqlash uchun req.session.save()
+sessiyadan ciqish uchun req.session.destroy()
+
+
+
+
+

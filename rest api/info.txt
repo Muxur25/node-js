@@ -1,0 +1,34 @@
+status code ---
+1XX  --- information
+2XX --- sucesss
+3XX --- redirected
+4XX --- client error
+5XX --- server error
+
+200 -- OK
+201 -- created
+204 -- No content
+206 -- partion content
+
+400 -- bad request notogri sorov
+401 -- unothorizent login qimagan
+402 -- payment required
+403 -- forbidden
+404 -- not found 
+405 -- metod not allowed
+408 -- request timeout
+
+500 -- internet server error
+502 -- bad geateway
+503 -- service univailable
+508 -- loop detected
+510 -- not extented
+511 -- network authentication required
+
+
+
+npm i sqlite3 --yengil database
+
+cors error bu frontendimiz boshqa portda backendimiz boshqa portda run bolsa yuzaga keladi
+
+npm i cors
